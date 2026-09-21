@@ -1,0 +1,3149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Tanisha, Always ♡</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Kalam:wght@400;700&display=swap');
+
+:root{
+  --bg:#100d0d;
+  --paper:#efe3d0;
+  --muted:#bcaea2;
+  --pink:#e8a0a0;
+  --deep-pink:#c85d70;
+  --red:#a92e43;
+  --line:rgba(239,227,208,.16);
+  --card:rgba(255,255,255,.045);
+}
+
+*{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 80% 10%,#2a1719 0,#100d0d 38%,#090808 100%);
+  color:var(--paper);
+  font-family:"DM Sans",sans-serif;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+/* NAVIGATION */
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:20;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 5vw;
+  background:rgba(10,8,8,.76);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--line);
+}
+
+.logo{
+  font:24px Kalam,cursive;
+}
+
+.navlinks{
+  display:flex;
+  gap:25px;
+  font-size:13px;
+  color:#c9bdb3;
+}
+
+.navlinks a:hover{
+  color:var(--pink);
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  padding:150px 7vw 80px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
+  align-items:center;
+  overflow:hidden;
+}
+
+.kicker,
+.hand{
+  font-family:Kalam,cursive;
+  color:var(--pink);
+}
+
+.kicker{
+  font-size:24px;
+}
+
+.hero h1{
+  font:600 clamp(50px,7vw,92px)/.88 "Cormorant Garamond",serif;
+  margin:18px 0;
+}
+
+.hero h1 em{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.hero p{
+  max-width:580px;
+  color:#c9bdb3;
+  font-size:17px;
+  line-height:1.8;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-top:25px;
+  padding:14px 22px;
+  border:1px solid rgba(232,160,160,.55);
+  border-radius:30px;
+  background:rgba(232,160,160,.13);
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  background:rgba(232,160,160,.22);
+}
+
+.hero-art{
+  position:relative;
+  min-height:520px;
+}
+
+.note{
+  position:absolute;
+  padding:25px;
+  background:#dfd0ba;
+  color:#382d27;
+  box-shadow:0 20px 55px #0008;
+  font:23px/1.2 Kalam,cursive;
+}
+
+.note.one{
+  top:20px;
+  left:0;
+  transform:rotate(-7deg);
+}
+
+.note.two{
+  bottom:40px;
+  right:5px;
+  transform:rotate(5deg);
+}
+
+.photo{
+  position:absolute;
+  right:12%;
+  top:50%;
+  transform:translateY(-50%) rotate(4deg);
+  width:min(350px,72%);
+  padding:13px 13px 52px;
+  background:#eee5d8;
+  box-shadow:0 30px 70px #000b;
+}
+
+.photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:360px;
+  object-fit:contain;
+  background:#d9cec1;
+}
+
+.photo .caption{
+  position:absolute;
+  bottom:15px;
+  left:18px;
+  color:#3d312c;
+  font:20px Kalam,cursive;
+}
+
+/* SECTIONS */
+
+section{
+  padding:105px 7vw;
+}
+
+.section-head{
+  max-width:700px;
+  margin-bottom:45px;
+}
+
+.section-head h2{
+  font:600 56px/1 "Cormorant Garamond",serif;
+  margin:8px 0;
+}
+
+.section-head p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* POLAROIDS */
+
+.polaroids{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.polaroid{
+  background:#eee5d8;
+  color:#332923;
+  padding:12px 12px 24px;
+  box-shadow:0 18px 40px #0008;
+  transition:.3s;
+}
+
+.polaroid:nth-child(2){
+  transform:rotate(2deg);
+}
+
+.polaroid:nth-child(4){
+  transform:rotate(-2deg);
+}
+
+.polaroid:hover{
+  transform:translateY(-9px) rotate(0);
+}
+
+.polaroid .pic{
+  min-height:260px;
+  background:linear-gradient(145deg,#241919,#76514f,#201616);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#e9d8c7;
+  font:28px Kalam,cursive;
+  text-align:center;
+  padding:0;
+  overflow:hidden;
+}
+
+.polaroid .pic img{
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:260px;
+  object-fit:contain;
+  margin:auto;
+}
+
+.polaroid .pic.photo-landscape img{
+  width:100%;
+  height:auto;
+  max-height:260px;
+}
+
+.polaroid .pic.photo-portrait img{
+  height:260px;
+  width:auto;
+  max-width:100%;
+}
+
+.polaroid p{
+  font:18px Kalam,cursive;
+  margin:15px 7px 0;
+}
+
+/* TIMELINE */
+
+.timeline{
+  max-width:850px;
+  border-left:1px solid var(--line);
+  margin-left:15px;
+  padding-left:35px;
+}
+
+.event{
+  position:relative;
+  margin:0 0 45px;
+}
+
+.event:before{
+  content:"";
+  position:absolute;
+  left:-42px;
+  top:6px;
+  width:13px;
+  height:13px;
+  border:2px solid var(--pink);
+  border-radius:50%;
+  background:var(--bg);
+}
+
+.event h3{
+  font:32px "Cormorant Garamond",serif;
+  margin:0 0 8px;
+}
+
+.event p{
+  color:#c7bbb2;
+  line-height:1.75;
+  margin:0;
+}
+
+/* CARDS */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:30px;
+  border-radius:18px;
+  min-height:180px;
+}
+
+.card h3{
+  font:29px "Cormorant Garamond",serif;
+  margin:0 0 10px;
+}
+
+.card p{
+  color:#c7bbb2;
+  line-height:1.7;
+}
+
+/* REASONS */
+
+.reasons{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.reason{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:rgba(255,255,255,.03);
+  min-height:135px;
+}
+
+.reason b{
+  font:27px "Cormorant Garamond",serif;
+}
+
+.reason span{
+  display:block;
+  color:#c7bbb2;
+  margin-top:9px;
+  line-height:1.55;
+}
+
+/* =========================================================
+   TANISHA CARE
+========================================================= */
+
+.care-section{
+  position:relative;
+}
+
+.care-header{
+  max-width:900px;
+}
+
+.care-title{
+  font:600 clamp(52px,7vw,78px)/.95 "Cormorant Garamond",serif;
+  margin:8px 0 18px;
+}
+
+.care-title span{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.care-intro{
+  max-width:650px;
+  color:#c9bdb3;
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* STAT BOXES */
+
+.care-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  margin:35px 0;
+}
+
+.care-stat{
+  min-height:145px;
+  padding:23px;
+  border:1px solid rgba(232,160,160,.28);
+  border-radius:18px;
+  background:rgba(255,255,255,.035);
+  position:relative;
+  overflow:hidden;
+}
+
+.care-stat:after{
+  content:"♡";
+  position:absolute;
+  right:16px;
+  bottom:7px;
+  font-size:28px;
+  color:rgba(232,160,160,.25);
+}
+
+.stat-icon{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.stat-label{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.stat-value{
+  color:var(--paper);
+  font:27px "Cormorant Garamond",serif;
+  margin-top:5px;
+}
+
+.stat-sub{
+  color:var(--pink);
+  font-size:12px;
+  margin-top:5px;
+}
+
+/* CARE MAIN */
+
+.care-main{
+  border:1px solid rgba(232,160,160,.24);
+  border-radius:24px;
+  padding:20px;
+  background:rgba(255,255,255,.025);
+}
+
+.care-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:20px;
+}
+
+/* CALENDAR */
+
+.calendar-card,
+.log-card{
+  border:1px solid var(--line);
+  border-radius:19px;
+  padding:25px;
+  background:rgba(0,0,0,.13);
+}
+
+.calendar-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.calendar-title{
+  font:29px "Cormorant Garamond",serif;
+}
+
+.month-btn{
+  width:38px;
+  height:38px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  background:transparent;
+  color:var(--paper);
+  cursor:pointer;
+  font-size:18px;
+}
+
+.month-btn:hover{
+  background:rgba(232,160,160,.12);
+}
+
+.weekdays,
+.calendar-days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+}
+
+.weekdays div{
+  text-align:center;
+  color:#a99b91;
+  font-size:11px;
+  padding:8px 0;
+}
+
+.day{
+  min-height:49px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  cursor:pointer;
+}
+
+.day-number{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:13px;
+  transition:.2s;
+}
+
+.day:hover .day-number{
+  background:rgba(232,160,160,.12);
+}
+
+.day.period .day-number{
+  background:var(--deep-pink);
+  color:white;
+  box-shadow:0 5px 15px rgba(200,93,112,.25);
+}
+
+.day.today .day-number{
+  border:1px solid var(--pink);
+  color:var(--pink);
+}
+
+.day.today.period .day-number{
+  background:var(--deep-pink);
+  border:2px solid var(--pink);
+  color:white;
+}
+
+.day.future-period .day-number{
+  border:1px dashed rgba(232,160,160,.55);
+  color:var(--pink);
+}
+
+.day.logged .day-number:after{
+  content:"";
+  position:absolute;
+  bottom:3px;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:var(--pink);
+}
+
+.calendar-legend{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  border-top:1px solid var(--line);
+  margin-top:15px;
+  padding-top:15px;
+  color:#a99b91;
+  font-size:11px;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.legend-dot{
+  width:11px;
+  height:11px;
+  border-radius:50%;
+}
+
+.legend-period{
+  background:var(--deep-pink);
+}
+
+.legend-today{
+  border:1px solid var(--pink);
+}
+
+.legend-estimated{
+  border:1px dashed var(--pink);
+}
+
+/* LOG */
+
+.log-title{
+  font:29px "Cormorant Garamond",serif;
+  margin-bottom:20px;
+}
+
+.log-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.log-field{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.log-field.full{
+  grid-column:1/-1;
+}
+
+.log-field label{
+  color:var(--pink);
+  font:16px Kalam,cursive;
+}
+
+.log-field input,
+.log-field select,
+.log-field textarea{
+  width:100%;
+  box-sizing:border-box;
+  padding:12px 13px;
+  border-radius:11px;
+  border:1px solid var(--line);
+  background:#171111;
+  color:var(--paper);
+  font-family:"DM Sans",sans-serif;
+  outline:none;
+}
+
+.log-field textarea{
+  min-height:90px;
+  resize:vertical;
+}
+
+.log-field input:focus,
+.log-field select:focus,
+.log-field textarea:focus{
+  border-color:rgba(232,160,160,.7);
+}
+
+.save-day{
+  grid-column:1/-1;
+  border:1px solid rgba(232,160,160,.55);
+  background:rgba(232,160,160,.16);
+  color:var(--paper);
+  padding:14px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.save-day:hover{
+  background:rgba(232,160,160,.28);
+  transform:translateY(-1px);
+}
+
+/* CUTE MESSAGE */
+
+.care-message{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:18px;
+}
+
+.message-card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:27px;
+  background:rgba(255,255,255,.035);
+  min-height:150px;
+}
+
+.message-card h3{
+  font:26px Kalam,cursive;
+  color:var(--pink);
+  margin:0 0 10px;
+}
+
+.message-card p{
+  color:#c7bbb2;
+  line-height:1.65;
+  margin:0;
+}
+
+.chocolate-card{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(232,160,160,.12),
+      rgba(255,255,255,.025)
+    );
+}
+
+.chocolate-icon{
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+/* HISTORY */
+
+.history-card{
+  margin-top:20px;
+  border:1px solid var(--line);
+  border-radius:19px;
+  padding:25px;
+  background:rgba(255,255,255,.025);
+}
+
+.history-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+
+.history-title{
+  font:29px "Cormorant Garamond",serif;
+}
+
+.clear-history{
+  background:transparent;
+  border:1px solid var(--line);
+  color:#a99b91;
+  padding:8px 14px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:11px;
+}
+
+.history-entry{
+  display:grid;
+  grid-template-columns:1.2fr .7fr .8fr 1.5fr;
+  gap:15px;
+  align-items:center;
+  padding:17px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.history-entry:last-child{
+  border-bottom:none;
+}
+
+.history-date{
+  font-family:"Cormorant Garamond",serif;
+  font-size:20px;
+}
+
+.history-pill{
+  display:inline-block;
+  background:rgba(200,93,112,.14);
+  color:var(--pink);
+  border-radius:20px;
+  padding:5px 10px;
+  font-size:11px;
+}
+
+.history-detail{
+  color:#bcaea2;
+  font-size:12px;
+}
+
+.history-note{
+  color:#a99b91;
+  font-family:Kalam,cursive;
+  font-size:15px;
+}
+
+/* LETTER */
+
+.letter{
+  max-width:850px;
+  margin:auto;
+  background:#e5d7c2;
+  color:#352923;
+  padding:55px 7vw;
+  box-shadow:0 30px 80px #0009;
+  transform:rotate(-.4deg);
+}
+
+.letter h2{
+  font:55px "Cormorant Garamond",serif;
+  margin-top:0;
+}
+
+.letter p{
+  font:19px/1.9 Kalam,cursive;
+}
+
+.secret{
+  text-align:center;
+  padding-top:25px;
+}
+
+.secret button{
+  cursor:pointer;
+  color:var(--paper);
+  background:transparent;
+  border:1px solid var(--line);
+  padding:12px 18px;
+  border-radius:25px;
+}
+
+#secretText{
+  max-width:650px;
+  margin:20px auto 0;
+  display:none;
+  color:var(--pink);
+  font:25px Kalam,cursive;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:60px 20px;
+  color:#85786f;
+  border-top:1px solid var(--line);
+}
+
+footer .heart{
+  color:var(--pink);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .care-stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .care-grid{
+    grid-template-columns:1fr;
+  }
+
+  .care-message{
+    grid-template-columns:1fr;
+  }
+
+  .history-entry{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:800px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:125px;
+  }
+
+  .hero-art{
+    min-height:440px;
+  }
+
+  .polaroids,
+  .reasons,
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-head h2{
+    font-size:45px;
+  }
+
+  .photo{
+    right:8%;
+  }
+
+  .log-form{
+    grid-template-columns:1fr;
+  }
+
+  .log-field.full,
+  .save-day{
+    grid-column:auto;
+  }
+
+}
+
+@media(max-width:550px){
+
+  section{
+    padding:80px 5vw;
+  }
+
+  .care-stats{
+    grid-template-columns:1fr;
+  }
+
+  .care-main{
+    padding:10px;
+  }
+
+  .calendar-card,
+  .log-card,
+  .history-card{
+    padding:17px;
+  }
+
+  .day{
+    min-height:43px;
+  }
+
+  .day-number{
+    width:31px;
+    height:31px;
+  }
+
+  .history-entry{
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+
+  .note{
+    font-size:18px;
+    padding:18px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+  <div class="logo">
+    for you, always ♡
+  </div>
+
+  <div class="navlinks">
+
+    <a href="#you">about you</a>
+    <a href="#story">our story</a>
+    <a href="#reasons">reasons</a>
+    <a href="#memories">memories</a>
+    <a href="#care">her calendar</a>
+    <a href="#letter">letter</a>
+
+  </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+  <div>
+
+    <div class="kicker">
+      hey you,
+    </div>
+
+    <h1>
+      A little space,<br>
+      just for <em>you.</em>
+    </h1>
+
+    <p>
+      not a grand declaration, not some perfectly written story
+      just a tiny corner of the internet for the girl who somehow became
+      part of my everyday life
+    </p>
+
+    <a class="btn" href="#story">
+      explore our story ♡
+    </a>
+
+  </div>
+
+
+  <div class="hero-art">
+
+    <div class="note one">
+      just a boy<br>
+      who got lucky<br>
+      to know you ♡
+    </div>
+
+    <div class="photo">
+
+      <img
+        src="photo3.jpg"
+        alt="Hero Photo"
+      >
+
+      <div class="caption">
+        those sleepy eyes
+      </div>
+
+    </div>
+
+    <div class="note two">
+      same chaos,<br>
+      different kind<br>
+      of happy ♡
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =====================================================
+     ABOUT YOU
+===================================================== -->
+
+<section id="you">
+
+  <div class="section-head">
+
+    <div class="hand">
+      the little things
+    </div>
+
+    <h2>
+      about you
+    </h2>
+
+    <p>
+      the things that became unmistakably you in my head
+    </p>
+
+  </div>
+
+
+  <div class="polaroids">
+
+    <div class="polaroid">
+      <div class="pic">
+        <img src="photo1.jpg" alt="NVM as always">
+      </div>
+
+      <p>
+        “Nvm” — as always
+      </p>
+    </div>
+
+
+    <div class="polaroid">
+
+      <div class="pic">
+        <img src="photo2.jpg" alt="Char bad de">
+      </div>
+
+      <p>
+        My “Char, bad de”
+      </p>
+
+    </div>
+
+
+    <div class="polaroid">
+
+      <div class="pic">
+        <img src="photo4.jpg" alt="Good for you only">
+      </div>
+
+      <p>
+        My “Good for you only”
+      </p>
+
+    </div>
+
+
+    <div class="polaroid">
+
+      <div class="pic">
+        <img src="photo5.jpg" alt="Block & Unblock">
+      </div>
+
+      <p>
+        Block &amp; Unblock
+      </p>
+
+    </div>
+
+
+    <div class="polaroid">
+
+      <div class="pic">
+        <img src="photo6.jpg" alt="Those sleepy eyes">
+      </div>
+
+      <p>
+        Those sleepy eyes
+      </p>
+
+    </div>
+
+
+    <div class="polaroid">
+
+      <div class="pic">
+        <img src="photo7.jpg" alt="Don't act serious">
+      </div>
+
+      <p>
+        Don’t act serious
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR STORY
+===================================================== -->
+
+<section id="story">
+
+  <div class="section-head">
+
+    <div class="hand">
+      somehow, still here
+    </div>
+
+    <h2>
+      our story
+    </h2>
+
+    <p>
+      not perfect, definitely not simple, but ours in all the
+      little ways that mattered
+    </p>
+
+  </div>
+
+
+  <div class="timeline">
+
+    <div class="event">
+
+      <h3>
+        the beginning
+      </h3>
+
+      <p>
+        two people who probably had no idea how complicated
+        this little story would become
+      </p>
+
+    </div>
+
+
+    <div class="event">
+
+      <h3>
+        the mess
+      </h3>
+
+      <p>
+        misunderstandings, old mistakes, arguments, silence,
+        apologies and a ridiculous amount of “nvm”
+      </p>
+
+    </div>
+
+
+    <div class="event">
+
+      <h3>
+        finding our rhythm
+      </h3>
+
+      <p>
+        random calls, late-night bakchodi, bullying each other,
+        sleepy snaps and conversations that somehow became
+        part of the day
+      </p>
+
+    </div>
+
+
+    <div class="event">
+
+      <h3>
+        the almost
+      </h3>
+
+      <p>
+        somewhere between friendship and something neither of us
+        really wanted to name, you became someone I genuinely cared about
+      </p>
+
+    </div>
+
+
+    <div class="event">
+
+      <h3>
+        right now
+      </h3>
+
+      <p>
+        no labels forced, no perfect ending written, just gratitude
+        that you're here and that I got to know this version of you
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     REASONS
+===================================================== -->
+
+<section id="reasons">
+
+  <div class="section-head">
+
+    <div class="hand">
+      a very incomplete list
+    </div>
+
+    <h2>
+      reasons you’re you
+    </h2>
+
+  </div>
+
+
+  <div class="reasons">
+
+    <div class="reason">
+      <b>those eyes</b>
+      <span>
+        the sleepy ones are unfair, honestly
+      </span>
+    </div>
+
+
+    <div class="reason">
+      <b>your nakhra</b>
+      <span>
+        annoying, dramatic, completely you
+      </span>
+    </div>
+
+
+    <div class="reason">
+      <b>the bakchodi</b>
+      <span>
+        somehow you make nonsense memorable
+      </span>
+    </div>
+
+
+    <div class="reason">
+      <b>your honesty</b>
+      <span>
+        even when the truth isn't particularly convenient
+      </span>
+    </div>
+
+
+    <div class="reason">
+      <b>your “nvm”</b>
+      <span>
+        three letters capable of starting an entire investigation 😭
+      </span>
+    </div>
+
+
+    <div class="reason">
+      <b>the way you care</b>
+      <span>
+        sometimes quietly, sometimes while pretending you don't
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section id="memories">
+
+  <div class="section-head">
+
+    <div class="hand">
+      little moments, big meaning
+    </div>
+
+    <h2>
+      memories
+    </h2>
+
+    <p>
+      replace the placeholders below with your actual photos
+      whenever you want
+    </p>
+
+  </div>
+
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>
+        the sleepy snap
+      </h3>
+
+      <p>
+        “I swear your sleepy eyes have their own fan club in my head”
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        the chocolate chapter
+      </h3>
+
+      <p>
+        from the old Ferrero chaos to the next little surprise,
+        somehow gifts became tiny pieces of our story
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        block &amp; unblock
+      </h3>
+
+      <p>
+        your most reliable recurring plotline 😭
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        late night talks
+      </h3>
+
+      <p>
+        the conversations that started as bakchodi
+        and somehow ended up being real
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     TANISHA CARE
+===================================================== -->
+
+<section id="care" class="care-section">
+
+
+  <div class="care-header">
+
+    <div class="hand">
+      take care of yourself ♡
+    </div>
+
+    <h2 class="care-title">
+      Tanisha <span>Care</span>
+    </h2>
+
+    <p class="care-intro">
+
+      your little private corner to keep track of the days,
+      the moods, the cramps and everything in between.
+
+      because you're allowed to take care of yourself too ♡
+
+    </p>
+
+  </div>
+
+
+  <!-- STATS -->
+
+  <div class="care-stats">
+
+
+    <div class="care-stat">
+
+      <div class="stat-icon">
+        🩷
+      </div>
+
+      <div class="stat-label">
+        last period
+      </div>
+
+      <div class="stat-value" id="lastPeriod">
+        —
+      </div>
+
+      <div class="stat-sub" id="lastPeriodDuration">
+        —
+      </div>
+
+    </div>
+
+
+    <div class="care-stat">
+
+      <div class="stat-icon">
+        📅
+      </div>
+
+      <div class="stat-label">
+        next period
+      </div>
+
+      <div class="stat-value" id="nextPeriod">
+        —
+      </div>
+
+      <div class="stat-sub" id="nextCountdown">
+        —
+      </div>
+
+    </div>
+
+
+    <div class="care-stat">
+
+      <div class="stat-icon">
+        🔄
+      </div>
+
+      <div class="stat-label">
+        cycle length
+      </div>
+
+      <div class="stat-value" id="cycleLength">
+        28 days
+      </div>
+
+      <div class="stat-sub">
+        based on your entries
+      </div>
+
+    </div>
+
+
+    <div class="care-stat">
+
+      <div class="stat-icon">
+        🌷
+      </div>
+
+      <div class="stat-label">
+        days since last period
+      </div>
+
+      <div class="stat-value" id="daysSince">
+        —
+      </div>
+
+      <div class="stat-sub">
+        be gentle with yourself ♡
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MAIN CARE BOX -->
+
+  <div class="care-main">
+
+
+    <div class="care-grid">
+
+
+      <!-- CALENDAR -->
+
+      <div class="calendar-card">
+
+        <div class="calendar-top">
+
+          <button
+            class="month-btn"
+            onclick="changeMonth(-1)"
+          >
+            ←
+          </button>
+
+          <div
+            class="calendar-title"
+            id="calendarTitle"
+          >
+            —
+          </div>
+
+          <button
+            class="month-btn"
+            onclick="changeMonth(1)"
+          >
+            →
+          </button>
+
+        </div>
+
+
+        <div class="weekdays">
+
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+
+        </div>
+
+
+        <div
+          class="calendar-days"
+          id="calendarDays"
+        ></div>
+
+
+        <div class="calendar-legend">
+
+          <div class="legend-item">
+
+            <span class="legend-dot legend-period"></span>
+
+            Period days
+
+          </div>
+
+
+          <div class="legend-item">
+
+            <span class="legend-dot legend-today"></span>
+
+            Today
+
+          </div>
+
+
+          <div class="legend-item">
+
+            <span class="legend-dot legend-estimated"></span>
+
+            Estimated
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LOG FORM -->
+
+      <div class="log-card">
+
+        <div class="log-title">
+          log your day ♡
+        </div>
+
+
+        <div class="log-form">
+
+
+          <div class="log-field">
+
+            <label>
+              period started
+            </label>
+
+            <input
+              type="date"
+              id="periodStart"
+            >
+
+          </div>
+
+
+          <div class="log-field">
+
+            <label>
+              period ended
+            </label>
+
+            <input
+              type="date"
+              id="periodEnd"
+            >
+
+          </div>
+
+
+          <div class="log-field">
+
+            <label>
+              mood today
+            </label>
+
+            <select id="periodMood">
+
+              <option value="">
+                how are you feeling?
+              </option>
+
+              <option>
+                🥲 tired
+              </option>
+
+              <option>
+                😴 sleepy
+              </option>
+
+              <option>
+                😌 okay
+              </option>
+
+              <option>
+                🥹 emotional
+              </option>
+
+              <option>
+                😤 irritated
+              </option>
+
+              <option>
+                🥰 surprisingly good
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="log-field">
+
+            <label>
+              symptoms
+            </label>
+
+            <select id="periodSymptoms">
+
+              <option value="">
+                any symptoms?
+              </option>
+
+              <option>
+                none
+              </option>
+
+              <option>
+                mild cramps
+              </option>
+
+              <option>
+                moderate cramps
+              </option>
+
+              <option>
+                strong cramps
+              </option>
+
+              <option>
+                headache
+              </option>
+
+              <option>
+                back pain
+              </option>
+
+              <option>
+                low energy
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="log-field full">
+
+            <label>
+              little note
+            </label>
+
+            <textarea
+              id="periodNote"
+              placeholder="anything you want to remember..."
+            ></textarea>
+
+          </div>
+
+
+          <button
+            class="save-day"
+            onclick="savePeriod()"
+          >
+            ♡ save this day ♡
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CUTE MESSAGES -->
+
+    <div class="care-message">
+
+
+      <div class="message-card chocolate-card">
+
+        <div class="chocolate-icon">
+          🍫
+        </div>
+
+        <h3 id="cuteMessage">
+          today = extra chocolate day ♡
+        </h3>
+
+        <p id="cuteSubmessage">
+          you've been doing great,
+          so yes... you deserve it ♡
+        </p>
+
+      </div>
+
+
+      <div class="message-card">
+
+        <h3>
+          a little reminder
+        </h3>
+
+        <p>
+          Rest when you need to.
+          Drink some water.
+          Eat properly.
+          And be a little kinder to yourself today.
+
+          You're doing better than you think. ♡
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- HISTORY -->
+
+    <div class="history-card">
+
+
+      <div class="history-top">
+
+        <div class="history-title">
+          ☷ recent history
+        </div>
+
+        <button
+          class="clear-history"
+          onclick="clearPeriodData()"
+        >
+          🗑 clear all
+        </button>
+
+      </div>
+
+
+      <div id="periodHistory">
+
+        <p style="color:#bcaea2">
+          nothing here yet... add your first day ♡
+        </p>
+
+      </div>
+
+
+      <div
+        class="hand"
+        style="
+          text-align:center;
+          margin-top:20px;
+          font-size:17px;
+        "
+      >
+        — same girl... different days... still you ♡ —
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     LETTER
+===================================================== -->
+
+<section>
+
+  <div
+    class="letter"
+    id="letter"
+  >
+
+    <div class="hand">
+      a little letter
+    </div>
+
+    <h2>
+      for you, Tanisha
+    </h2>
+
+
+    <p>
+
+      I don't always say things properly and sometimes
+      I make things more complicated than they need to be,
+      but I hope you know that I notice you.
+
+    </p>
+
+
+    <p>
+
+      I notice the random texts, the calls, the nakhra,
+      the bullying, the “char bad de”, the “good for you only”,
+      the sleepy eyes, the moments where you pretend you don't care
+      and the moments where you very obviously do.
+
+    </p>
+
+
+    <p>
+
+      I don't need this little website to define what we are.
+
+      I just wanted to make something that says one simple thing:
+
+      <strong>
+        you matter to me, and I'm really glad it was you
+      </strong>
+
+    </p>
+
+
+    <p>
+      and yes, before you get too happy,
+      you're still annoying as fuck 😭
+    </p>
+
+
+    <p
+      class="hand"
+      style="font-size:28px"
+    >
+      — from your favourite idiot ♡
+    </p>
+
+  </div>
+
+
+  <div class="secret">
+
+    <button
+      onclick="
+        document.getElementById('secretText').style.display='block'
+      "
+    >
+      one more thing
+    </button>
+
+
+    <div id="secretText">
+
+      if you ever forget how much space
+      you take up in my life… come back here ♡
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  made with
+  <span class="heart">♡</span>
+  and an unreasonable amount of overthinking
+
+  <br>
+
+  <span class="hand">
+    for Tanisha, always
+  </span>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   PHOTO ORIENTATION
+   Portrait and landscape photos are fitted without cropping.
+===================================================== */
+
+function setPhotoOrientation(img){
+  const box = img.closest(".pic");
+  if(!box || !img.naturalWidth || !img.naturalHeight) return;
+
+  box.classList.remove(
+    "photo-landscape",
+    "photo-portrait"
+  );
+
+  if(img.naturalWidth >= img.naturalHeight){
+    box.classList.add("photo-landscape");
+  }else{
+    box.classList.add("photo-portrait");
+  }
+}
+
+document.querySelectorAll(".polaroid .pic img").forEach(img=>{
+  if(img.complete){
+    setPhotoOrientation(img);
+  }else{
+    img.addEventListener("load",()=>{
+      setPhotoOrientation(img);
+    });
+  }
+});
+
+
+/* =====================================================
+   DATA
+===================================================== */
+
+let periodData =
+  JSON.parse(
+    localStorage.getItem("tanishaPeriodData")
+  ) || [];
+
+
+/* =====================================================
+   CALENDAR STATE
+===================================================== */
+
+let calendarDate = new Date();
+
+
+/* =====================================================
+   DATE HELPERS
+===================================================== */
+
+function dateOnly(date){
+
+  return new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate()
+  );
+
+}
+
+
+function dateFromString(value){
+
+  return new Date(
+    value + "T00:00:00"
+  );
+
+}
+
+
+function formatDate(value){
+
+  if(!value) return "—";
+
+  return dateFromString(value)
+    .toLocaleDateString(
+      "en-IN",
+      {
+        day:"numeric",
+        month:"short",
+        year:"numeric"
+      }
+    );
+
+}
+
+
+function differenceInDays(a,b){
+
+  const oneDay =
+    1000 * 60 * 60 * 24;
+
+  return Math.round(
+    (dateOnly(a)-dateOnly(b))/oneDay
+  );
+
+}
+
+
+function dateKey(date){
+
+  const y = date.getFullYear();
+
+  const m = String(
+    date.getMonth()+1
+  ).padStart(2,"0");
+
+  const d = String(
+    date.getDate()
+  ).padStart(2,"0");
+
+  return `${y}-${m}-${d}`;
+
+}
+
+
+/* =====================================================
+   SAVE DATA
+===================================================== */
+
+function savePeriod(){
+
+  const start =
+    document.getElementById(
+      "periodStart"
+    ).value;
+
+  const end =
+    document.getElementById(
+      "periodEnd"
+    ).value;
+
+  const mood =
+    document.getElementById(
+      "periodMood"
+    ).value;
+
+  const symptoms =
+    document.getElementById(
+      "periodSymptoms"
+    ).value;
+
+  const note =
+    document.getElementById(
+      "periodNote"
+    ).value;
+
+
+  if(!start){
+
+    alert(
+      "Add the period start date first ♡"
+    );
+
+    return;
+
+  }
+
+
+  if(
+    end &&
+    new Date(end) < new Date(start)
+  ){
+
+    alert(
+      "The end date can't be before the start date ♡"
+    );
+
+    return;
+
+  }
+
+
+  const entry = {
+
+    start:start,
+
+    end:end,
+
+    mood:mood,
+
+    symptoms:symptoms,
+
+    note:note
+
+  };
+
+
+  periodData.push(entry);
+
+
+  periodData.sort(
+    (a,b) =>
+      new Date(b.start) -
+      new Date(a.start)
+  );
+
+
+  localStorage.setItem(
+    "tanishaPeriodData",
+    JSON.stringify(periodData)
+  );
+
+
+  document.getElementById(
+    "periodStart"
+  ).value="";
+
+
+  document.getElementById(
+    "periodEnd"
+  ).value="";
+
+
+  document.getElementById(
+    "periodMood"
+  ).value="";
+
+
+  document.getElementById(
+    "periodSymptoms"
+  ).value="";
+
+
+  document.getElementById(
+    "periodNote"
+  ).value="";
+
+
+  displayPeriodData();
+
+  renderCalendar();
+
+  updateStats();
+
+  updateCuteMessage();
+
+}
+
+
+/* =====================================================
+   CALCULATE CYCLE
+===================================================== */
+
+function getCycleLength(){
+
+  if(periodData.length < 2){
+
+    return 28;
+
+  }
+
+
+  const dates =
+    periodData
+      .map(
+        entry =>
+          dateFromString(entry.start)
+      )
+      .sort(
+        (a,b)=>b-a
+      );
+
+
+  let differences=[];
+
+
+  for(
+    let i=0;
+    i<dates.length-1;
+    i++
+  ){
+
+    const diff =
+      differenceInDays(
+        dates[i],
+        dates[i+1]
+      );
+
+
+    if(
+      diff >= 15 &&
+      diff <= 60
+    ){
+
+      differences.push(diff);
+
+    }
+
+  }
+
+
+  if(!differences.length){
+
+    return 28;
+
+  }
+
+
+  const total =
+    differences.reduce(
+      (sum,value)=>sum+value,
+      0
+    );
+
+
+  return Math.round(
+    total/differences.length
+  );
+
+}
+
+
+/* =====================================================
+   GET LAST PERIOD
+===================================================== */
+
+function getLastPeriod(){
+
+  if(!periodData.length){
+
+    return null;
+
+  }
+
+
+  return periodData
+    .slice()
+    .sort(
+      (a,b)=>
+        dateFromString(b.start) -
+        dateFromString(a.start)
+    )[0];
+
+}
+
+
+/* =====================================================
+   GET NEXT PERIOD
+===================================================== */
+
+function getNextPeriod(){
+
+  const last =
+    getLastPeriod();
+
+
+  if(!last){
+
+    return null;
+
+  }
+
+
+  const cycle =
+    getCycleLength();
+
+
+  const next =
+    dateFromString(
+      last.start
+    );
+
+
+  next.setDate(
+    next.getDate()+cycle
+  );
+
+
+  return next;
+
+}
+
+
+/* =====================================================
+   UPDATE STATISTICS
+===================================================== */
+
+function updateStats(){
+
+  const last =
+    getLastPeriod();
+
+
+  if(!last){
+
+    document.getElementById(
+      "lastPeriod"
+    ).textContent="—";
+
+    document.getElementById(
+      "nextPeriod"
+    ).textContent="—";
+
+    document.getElementById(
+      "daysSince"
+    ).textContent="—";
+
+    document.getElementById(
+      "nextCountdown"
+    ).textContent="—";
+
+    document.getElementById(
+      "cycleLength"
+    ).textContent="28 days";
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "lastPeriod"
+  ).textContent =
+    formatDate(last.start);
+
+
+  /* PERIOD DURATION */
+
+  if(last.end){
+
+    const duration =
+      differenceInDays(
+        dateFromString(last.end),
+        dateFromString(last.start)
+      ) + 1;
+
+
+    document.getElementById(
+      "lastPeriodDuration"
+    ).textContent =
+      `${duration} day${duration===1?"":"s"}`;
+
+  }else{
+
+    document.getElementById(
+      "lastPeriodDuration"
+    ).textContent =
+      "end date not added";
+
+  }
+
+
+  /* CYCLE */
+
+  const cycle =
+    getCycleLength();
+
+
+  document.getElementById(
+    "cycleLength"
+  ).textContent =
+    cycle + " days";
+
+
+  /* DAYS SINCE */
+
+  const today =
+    dateOnly(new Date());
+
+
+  const lastDate =
+    dateFromString(last.start);
+
+
+  const daysSince =
+    differenceInDays(
+      today,
+      lastDate
+    );
+
+
+  document.getElementById(
+    "daysSince"
+  ).textContent =
+    `${Math.max(0,daysSince)} days`;
+
+
+  /* NEXT PERIOD */
+
+  const next =
+    getNextPeriod();
+
+
+  if(next){
+
+    document.getElementById(
+      "nextPeriod"
+    ).textContent =
+      next.toLocaleDateString(
+        "en-IN",
+        {
+          day:"numeric",
+          month:"short"
+        }
+      );
+
+
+    const daysUntil =
+      differenceInDays(
+        next,
+        today
+      );
+
+
+    if(daysUntil > 0){
+
+      document.getElementById(
+        "nextCountdown"
+      ).textContent =
+        `in ${daysUntil} day${daysUntil===1?"":"s"}`;
+
+    }
+
+    else if(daysUntil === 0){
+
+      document.getElementById(
+        "nextCountdown"
+      ).textContent =
+        "today ♡";
+
+    }
+
+    else{
+
+      document.getElementById(
+        "nextCountdown"
+      ).textContent =
+        "estimated date passed";
+
+    }
+
+  }
+
+}
+
+
+/* =====================================================
+   CALENDAR
+===================================================== */
+
+function renderCalendar(){
+
+  const year =
+    calendarDate.getFullYear();
+
+  const month =
+    calendarDate.getMonth();
+
+
+  const monthNames = [
+
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+
+  ];
+
+
+  document.getElementById(
+    "calendarTitle"
+  ).textContent =
+    `${monthNames[month]} ${year}`;
+
+
+  const firstDay =
+    new Date(
+      year,
+      month,
+      1
+    ).getDay();
+
+
+  const daysInMonth =
+    new Date(
+      year,
+      month+1,
+      0
+    ).getDate();
+
+
+  const container =
+    document.getElementById(
+      "calendarDays"
+    );
+
+
+  container.innerHTML="";
+
+
+  /* EMPTY CELLS */
+
+  for(
+    let i=0;
+    i<firstDay;
+    i++
+  ){
+
+    const empty =
+      document.createElement("div");
+
+    empty.className="day";
+
+    container.appendChild(empty);
+
+  }
+
+
+  /* PERIOD RANGE */
+
+  const periodRanges =
+    getPeriodRanges();
+
+
+  const nextPeriod =
+    getNextPeriod();
+
+
+  const today =
+    dateKey(
+      new Date()
+    );
+
+
+  /* DAYS */
+
+  for(
+    let day=1;
+    day<=daysInMonth;
+    day++
+  ){
+
+    const date =
+      new Date(
+        year,
+        month,
+        day
+      );
+
+
+    const key =
+      dateKey(date);
+
+
+    const cell =
+      document.createElement("div");
+
+    cell.className="day";
+
+
+    const number =
+      document.createElement("div");
+
+    number.className="day-number";
+
+    number.textContent=day;
+
+
+    /* TODAY */
+
+    if(key===today){
+
+      cell.classList.add(
+        "today"
+      );
+
+    }
+
+
+    /* PERIOD */
+
+    if(
+      isPeriodDate(
+        date,
+        periodRanges
+      )
+    ){
+
+      cell.classList.add(
+        "period"
+      );
+
+    }
+
+
+    /* ESTIMATED NEXT PERIOD */
+
+    if(
+      nextPeriod &&
+      isSameDate(
+        date,
+        nextPeriod
+      )
+    ){
+
+      cell.classList.add(
+        "future-period"
+      );
+
+    }
+
+
+    /* LOGGED DAY */
+
+    if(
+      periodData.some(
+        entry =>
+          entry.start===key ||
+          entry.end===key
+      )
+    ){
+
+      cell.classList.add(
+        "logged"
+      );
+
+    }
+
+
+    cell.appendChild(number);
+
+    container.appendChild(cell);
+
+  }
+
+}
+
+
+/* =====================================================
+   PERIOD RANGES
+===================================================== */
+
+function getPeriodRanges(){
+
+  return periodData.map(
+    entry => ({
+
+      start:
+        dateFromString(
+          entry.start
+        ),
+
+      end:
+        entry.end
+        ? dateFromString(entry.end)
+        : dateFromString(entry.start)
+
+    })
+  );
+
+}
+
+
+function isSameDate(a,b){
+
+  return (
+    a.getFullYear()===b.getFullYear() &&
+    a.getMonth()===b.getMonth() &&
+    a.getDate()===b.getDate()
+  );
+
+}
+
+
+function isPeriodDate(
+  date,
+  ranges
+){
+
+  return ranges.some(
+    range => {
+
+      const d =
+        dateOnly(date);
+
+      const start =
+        dateOnly(range.start);
+
+      const end =
+        dateOnly(range.end);
+
+      return (
+        d>=start &&
+        d<=end
+      );
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   CHANGE MONTH
+===================================================== */
+
+function changeMonth(amount){
+
+  calendarDate.setMonth(
+    calendarDate.getMonth()+amount
+  );
+
+  renderCalendar();
+
+}
+
+
+/* =====================================================
+   HISTORY
+===================================================== */
+
+function displayPeriodData(){
+
+  const history =
+    document.getElementById(
+      "periodHistory"
+    );
+
+
+  history.innerHTML="";
+
+
+  if(!periodData.length){
+
+    history.innerHTML = `
+
+      <p style="color:#bcaea2">
+        nothing here yet...
+        add your first day ♡
+      </p>
+
+    `;
+
+    return;
+
+  }
+
+
+  periodData
+    .slice()
+    .sort(
+      (a,b)=>
+        new Date(b.start) -
+        new Date(a.start)
+    )
+    .forEach(
+      entry => {
+
+        const div =
+          document.createElement(
+            "div"
+          );
+
+
+        div.className=
+          "history-entry";
+
+
+        let duration="—";
+
+
+        if(entry.end){
+
+          duration =
+            differenceInDays(
+              dateFromString(entry.end),
+              dateFromString(entry.start)
+            )+1;
+
+        }
+
+
+        div.innerHTML = `
+
+          <div class="history-date">
+
+            🩷
+            ${formatDate(entry.start)}
+
+            ${
+              entry.end
+              ? ` — ${formatDate(entry.end)}`
+              : ""
+            }
+
+          </div>
+
+
+          <div>
+
+            ${
+              duration !== "—"
+              ? `<span class="history-pill">
+                   ${duration} days
+                 </span>`
+              : ""
+            }
+
+          </div>
+
+
+          <div class="history-detail">
+
+            ${
+              entry.mood
+              ? `mood: ${escapeHTML(entry.mood)}`
+              : "mood: —"
+            }
+
+            <br>
+
+            ${
+              entry.symptoms
+              ? `symptoms: ${escapeHTML(entry.symptoms)}`
+              : "symptoms: —"
+            }
+
+          </div>
+
+
+          <div class="history-note">
+
+            ${
+              entry.note
+              ? `“${escapeHTML(entry.note)}”`
+              : ""
+            }
+
+          </div>
+
+        `;
+
+
+        history.appendChild(div);
+
+      }
+    );
+
+}
+
+
+/* =====================================================
+   CUTE DAILY MESSAGE
+===================================================== */
+
+function updateCuteMessage(){
+
+  const last =
+    getLastPeriod();
+
+
+  const message =
+    document.getElementById(
+      "cuteMessage"
+    );
+
+  const sub =
+    document.getElementById(
+      "cuteSubmessage"
+    );
+
+
+  if(!last){
+
+    message.textContent =
+      "today = extra chocolate day ♡";
+
+    sub.textContent =
+      "because you deserve little things that make you happy ♡";
+
+    return;
+
+  }
+
+
+  const today =
+    dateOnly(new Date());
+
+
+  const start =
+    dateFromString(
+      last.start
+    );
+
+
+  const days =
+    differenceInDays(
+      today,
+      start
+    );
+
+
+  /* DURING PERIOD */
+
+  if(days>=0 && days<=4){
+
+    const messages=[
+
+      [
+        "today = extra chocolate day 🍫",
+        "no negotiations. rest, hydrate and be extra nice to yourself ♡"
+      ],
+
+      [
+        "blanket + chocolate + zero guilt ♡",
+        "today's agenda is surviving beautifully."
+      ],
+
+      [
+        "you deserve the soft treatment today 🌷",
+        "take it slow. everything else can wait a little."
+      ],
+
+      [
+        "main character needs a rest day ♡",
+        "water, comfort food and absolutely no unnecessary stress."
+      ]
+
+    ];
+
+
+    const chosen =
+      messages[
+        days % messages.length
+      ];
+
+
+    message.textContent =
+      chosen[0];
+
+    sub.textContent =
+      chosen[1];
+
+    return;
+
+  }
+
+
+  /* AFTER PERIOD */
+
+  const messages=[
+
+    [
+      "you survived another one ♡",
+      "now go drink some water and pretend you're not dramatic."
+    ],
+
+    [
+      "today deserves a little treat 🍫",
+      "because life is too short to say no to chocolate."
+    ],
+
+    [
+      "pretty girl maintenance day 🌷",
+      "eat properly, hydrate, rest and keep being you."
+    ],
+
+    [
+      "you're doing better than you think ♡",
+      "don't forget to give yourself some credit."
+    ],
+
+    [
+      "tiny reminder: take care of you.",
+      "everyone else can wait. your peace doesn't have to."
+    ]
+
+  ];
+
+
+  const index =
+    Math.abs(days) %
+    messages.length;
+
+
+  message.textContent =
+    messages[index][0];
+
+  sub.textContent =
+    messages[index][1];
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(text){
+
+  return String(text)
+
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+
+    .replace(
+      /</g,
+      "&lt;"
+    )
+
+    .replace(
+      />/g,
+      "&gt;"
+    )
+
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+
+    .replace(
+      /'/g,
+      "&#039;"
+    );
+
+}
+
+
+/* =====================================================
+   CLEAR DATA
+===================================================== */
+
+function clearPeriodData(){
+
+  if(
+    !confirm(
+      "Clear all saved period history?"
+    )
+  ){
+
+    return;
+
+  }
+
+
+  periodData=[];
+
+
+  localStorage.removeItem(
+    "tanishaPeriodData"
+  );
+
+
+  displayPeriodData();
+
+  updateStats();
+
+  renderCalendar();
+
+  updateCuteMessage();
+
+}
+
+
+/* =====================================================
+   INITIAL LOAD
+===================================================== */
+
+displayPeriodData();
+
+updateStats();
+
+renderCalendar();
+
+updateCuteMessage();
+
+
+</script>
+
+</body>
+</html>
